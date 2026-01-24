@@ -34,7 +34,7 @@ mongoose
 const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
-app.use(express.static(__dirname + "/public")); // safer approach //
+app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.use(flash());
 // seedDB();
