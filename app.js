@@ -16,9 +16,6 @@ var campgroundRoutes = require("./routes/campground"),
   commentRoutes = require("./routes/comment"),
   indexRoutes = require("./routes/index");
 
-// var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_v11";
-// mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
-
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
